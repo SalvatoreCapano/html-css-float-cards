@@ -22,7 +22,6 @@ body{
 main{
     background-color: wheat; /*temp*/
     max-width: 1250px;
-    height: 80vh;
 
     margin: 1.5rem auto;
 
@@ -48,4 +47,33 @@ p{
     font-size: 1.1em;
 
     margin: 2em 0;
+}
+
+#cardContainer{
+    width: 100%;
+
+    margin-top: 3em;
+}
+
+.card{
+    width: calc((100% / 3) - calc(70px / 3));
+    height: 110px;
+
+    background-color: steelblue;
+
+    float: left;
+}
+
+.card:nth-child(3n+2){
+    margin: 0 35px;
+}
+
+.card:nth-child(n+4){
+    margin-top: 50px;
+}
+
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
 }
