@@ -16,11 +16,10 @@ body{
     main title: #e53170
     card name: #fffefb
     card background: #0f0e17
-    links: #2892c6
+    links: #48ade0
 */
 
 main{
-    background-color: wheat; /*temp*/
     max-width: 1250px;
 
     margin: 1.5rem auto;
@@ -59,7 +58,8 @@ p{
     width: calc((100% / 3) - calc(70px / 3));
     height: 110px;
 
-    background-color: steelblue;
+    background-color: #0f0e17;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
 
     float: left;
 }
@@ -76,4 +76,41 @@ p{
     content: '';
     display: table;
     clear: both;
+}
+
+/*Inner card styling*/
+img{
+    height: 100%;
+
+    float: left;
+}
+
+.cardInfoContainer{
+    height: 100%;
+    width: calc(100% - 110px);  /*110px = img size*/
+
+    padding: 15px;
+
+    text-align: left;
+    color: #fffefb;
+
+    float: left;
+}
+
+.cardInfoContainer > *{
+    display: inline-block;
+    width: 100%;
+
+    margin-bottom: 6px;
+}
+
+.name{
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+.email{
+    text-decoration: none;
+    color: #48ade0;
 }
